@@ -20,12 +20,29 @@
     --weight: 500;
 }
 
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+footer > a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 200ms ease-in-out;
+}
+footer > a:hover{
+    color: var(--blue);
+}
+footer > a:visited {
+    color: var(--white);
+}
 @media only screen and (max-width: 375px) {
     body {
         background-color: lightblue;
     }
 
 }
+
 @media only screen and (min-width: 376px) {
     body {
         background-color: lightyellow;
