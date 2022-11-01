@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --active-input-border: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --input-errors: hsl(0, 100%, 66%);
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-violet: hsl(270, 3%, 87%);
+    --dark-grayish-violet: hsl(279, 6%, 55%);
+    --verry-dark-grayish-violet: hsl(278, 68%, 11%);
+    --font-size: 18px;
+    --family: 'Space Grotesk', sans-serif;
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        background-color: lightblue;
+    }
+
+}
+
+@media only screen and (max-width: 1440px) {
+    body {
+        background-color: lightblue;
+    }
+}
