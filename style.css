@@ -17,6 +17,7 @@
     --verry-dark-grayish-violet: hsl(278, 68%, 11%);
     --font-size: 18px;
     --family: 'Space Grotesk', sans-serif;
+    --weight: 500;
 }
 
 @media only screen and (max-width: 375px) {
