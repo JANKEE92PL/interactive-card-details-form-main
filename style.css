@@ -19,18 +19,68 @@
     --family: 'Space Grotesk', sans-serif;
     --weight: 500;
 }
+
 body {
     /*background: var(--white);*/
     background: lightblue;
+    font-family: var(--family);
 }
-body .bg-image {
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.bg-image {
     background: url("images/bg-main-desktop.png") no-repeat left top;
     background-size: cover;
     height: 100vh;
     width: 33vw;
 }
 
+.bg-card-front {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+}
 
+.bg-card-back {
+    position: absolute;
+    top: 445px;
+    left: 447px;
+    margin: 2rem;
+}
+.box > [for="expDate"] {
+    display: inline-block;
+    width: 49%;
+ }
+form {
+    display: flex;
+    flex-direction: column;
+    /*background: dodgerblue;*/
+    width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    color: var(--verry-dark-grayish-violet);
+    font-weight: var(--weight);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+form > input {
+    border-radius: 6px;
+    border: none;
+    padding: 0.5rem;
+}
+form fieldset  {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+form fieldset > input {
+    width: 50%;
+}
 footer {
     text-align: center;
     padding: 1rem;
@@ -41,12 +91,15 @@ footer > a {
     text-decoration: none;
     transition: color 200ms ease-in-out;
 }
-footer > a:hover{
+
+footer > a:hover {
     color: var(--blue);
 }
+
 footer > a:visited {
     color: var(--white);
 }
+
 /*@media only screen and (max-width: 375px) {*/
 /*    body {*/
 /*        background-color: lightblue;*/
