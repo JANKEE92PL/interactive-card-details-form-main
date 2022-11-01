@@ -19,6 +19,17 @@
     --family: 'Space Grotesk', sans-serif;
     --weight: 500;
 }
+body {
+    /*background: var(--white);*/
+    background: lightblue;
+}
+body .bg-image {
+    background: url("images/bg-main-desktop.png") no-repeat left top;
+    background-size: cover;
+    height: 100vh;
+    width: 33vw;
+}
+
 
 footer {
     text-align: center;
@@ -36,21 +47,21 @@ footer > a:hover{
 footer > a:visited {
     color: var(--white);
 }
-@media only screen and (max-width: 375px) {
-    body {
-        background-color: lightblue;
-    }
+/*@media only screen and (max-width: 375px) {*/
+/*    body {*/
+/*        background-color: lightblue;*/
+/*    }*/
 
-}
+/*}*/
 
-@media only screen and (min-width: 376px) {
-    body {
-        background-color: lightyellow;
-    }
-}
+/*@media only screen and (min-width: 376px) {*/
+/*    body {*/
+/*        background-color: lightyellow;*/
+/*    }*/
+/*}*/
 
-@media only screen and (min-width: 1440px) {
-    body {
-        background-color: lightsalmon;
-    }
-}
+/*@media only screen and (min-width: 1440px) {*/
+/*    body {*/
+/*        background-color: lightsalmon;*/
+/*    }*/
+/*}*/
