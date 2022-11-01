@@ -54,6 +54,15 @@ body {
     display: inline-block;
     width: 49%;
  }
+.box #expDateMonth {
+    width: 25%;
+}
+.box #expDateYear {
+    width: 25%;
+}
+.box #cvc {
+    width: 50%;
+}
 form {
     display: flex;
     flex-direction: column;
@@ -68,12 +77,13 @@ form label {
     text-transform: uppercase;
     margin-bottom: 8px;
 }
-form > input {
+form input {
     border-radius: 6px;
     border: none;
     padding: 0.5rem;
 }
 form fieldset  {
+    width: 50%;
     display: flex;
     justify-content: space-between;
     border: none;
