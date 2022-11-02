@@ -21,9 +21,10 @@
 }
 
 body {
-    /*background: var(--white);*/
-    background: lightblue;
+    background: var(--white);
+    /*background: lightblue;*/
     font-family: var(--family);
+    font-weight: var(--weight);
 }
 
 .wrapper {
@@ -31,6 +32,7 @@ body {
     align-items: center;
     position: relative;
 }
+
 .bg-image {
     background: url("images/bg-main-desktop.png") no-repeat left top;
     background-size: cover;
@@ -50,16 +52,20 @@ body {
     left: 447px;
     margin: 2rem;
 }
+
 .box {
     display: flex;
 
 }
+
 .box [for="expDateMonth"] {
     width: 50%;
 }
+
 .box [for="cvc"] {
     width: 50%;
 }
+
 form {
     display: flex;
     flex-direction: column;
@@ -70,33 +76,52 @@ form {
 
 form label {
     color: var(--verry-dark-grayish-violet);
-    font-weight: var(--weight);
     text-transform: uppercase;
     margin: 8px 8px 8px 0;
 
 }
+
 form input {
+    border: var(--light-grayish-violet) solid 1px;
     border-radius: 6px;
-    border: none;
-    padding: 0.5rem;
+    padding: 0.75rem;
+    color: var(--verry-dark-grayish-violet);
+    font-weight: bold;
     margin: 8px 8px 8px 0;
 }
-form fieldset  {
+
+body form input:active,
+body form input:focus {
+    border-color: var(--active-input-border);
+}
+
+body form input:invalid {
+    border-color: var(--input-errors);
+}
+
+form fieldset {
     width: 100%;
     display: flex;
     justify-content: space-between;
     border: none;
 }
+
 form fieldset > input {
     margin: 8px 8px 8px 0;
     width: 25%;
 }
+
 form fieldset #cvc {
     width: 50%;
 }
+
 form #submit {
-    
+    margin: 2rem 8px 8px 0;
+    padding: 1rem;
+    color: var(--white);
+    background-color: var(--verry-dark-grayish-violet);
 }
+
 footer {
     text-align: center;
     padding: 1rem;
