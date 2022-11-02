@@ -50,17 +50,14 @@ body {
     left: 447px;
     margin: 2rem;
 }
-.box > [for="expDate"] {
-    display: inline-block;
-    width: 49%;
- }
-.box #expDateMonth {
-    width: 25%;
+.box {
+    display: flex;
+
 }
-.box #expDateYear {
-    width: 25%;
+.box [for="expDateMonth"] {
+    width: 50%;
 }
-.box #cvc {
+.box [for="cvc"] {
     width: 50%;
 }
 form {
@@ -75,21 +72,30 @@ form label {
     color: var(--verry-dark-grayish-violet);
     font-weight: var(--weight);
     text-transform: uppercase;
-    margin-bottom: 8px;
+    margin: 8px 8px 8px 0;
+
 }
 form input {
     border-radius: 6px;
     border: none;
     padding: 0.5rem;
+    margin: 8px 8px 8px 0;
 }
 form fieldset  {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     border: none;
 }
 form fieldset > input {
+    margin: 8px 8px 8px 0;
+    width: 25%;
+}
+form fieldset #cvc {
     width: 50%;
+}
+form #submit {
+    
 }
 footer {
     text-align: center;
