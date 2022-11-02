@@ -46,11 +46,56 @@ body {
     left: 300px;
 }
 
+#bg-card-front-logo {
+    position: relative;
+}
+
+#bg-card-front-logo img {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+}
+
+#bg-card-front-logo h2 {
+    position: absolute;
+    top: 9.5rem;
+    left: 2rem;
+    color: var(--white);
+    letter-spacing: 4px;
+
+}
+
+#bg-card-front-logo p {
+    position: absolute;
+    top: 13rem;
+    left: 2rem;
+    color: var(--light-grayish-violet);
+    letter-spacing: 2px;
+
+}
+
+#bg-card-front-logo span {
+    position: absolute;
+    top: 13rem;
+    left: 20rem;
+    color: var(--light-grayish-violet);
+    letter-spacing: 4px;
+
+}
+
 .bg-card-back {
     position: absolute;
     top: 445px;
     left: 447px;
     margin: 2rem;
+}
+
+.bg-card-back #csv-cc {
+    position: absolute;
+    bottom: 48%;
+    right: 15%;
+    color: var(--light-grayish-violet);
+    letter-spacing: 5px;
 }
 
 .box {
