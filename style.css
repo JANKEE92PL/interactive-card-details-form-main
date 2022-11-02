@@ -74,7 +74,7 @@ body {
 
 }
 
-#bg-card-front-logo span {
+#bg-card-front-logo div {
     position: absolute;
     top: 13rem;
     left: 20rem;
